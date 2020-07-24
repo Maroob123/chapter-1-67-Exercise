@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>chap 49-52 Exercise</title>
+        <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<center><h1>Chap 49-52 Exercise</h1></center>
+<h4>1.Create a signup form and display form data in your web
+    page on submission</h4><br>
+<h2>Signup Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<h4>2. Suppose in your webpage there is content area in which
+    you have entered your item details, but user can only see
+    some details on first look. When user clicks on “Read
+    more” button, full detail of that particular item will be
+    displayed.</h4>
+    <p id="read">Saylani Welfare International Trust is a Pakistani charity focusing primarily on feeding the homeless. It was established in May 1999 and is headquartered at Bahdurabad, Karachi, Pakistan.......</p>
+        <a href="javascript:void(0);" onclick="myFunction();" id="myBtn">Read More</a>
+
+<h4>3. In previous assignment you have created a tabular data
+  using javascript. Let’s modify that. Create a form which
+  takes student’s details and show each student detail in
+  table. Each row of table must contain a delete button and
+  an edit button. On click on delete button entire row should
+  be deleted. On click on edit button, a hidden form will
+  appear with the values of that row</h4>
+      <span><h1>Add info</h1>
+        <hr>
+        first Name:<input id="fname" required><br><br>
+        Last Name :<input id="lname" required><br><br>
+        Class &nbsp;&nbsp;&nbsp;&nbsp;:<input id="cl" required><br><br>
+        <button onclick="addinfo()" style="width: 15%;"><b>ADD</b></button>
+      </span>
+
+          <table id="mynewTable" border="2px solid black">
+            <tr>
+              <th><Center>Index</Center></th>
+              <th><center>First Name</center></th>
+              <th><center>Last Name</center></th>
+              <th><center>Class</center></th>
+            </tr>
+          </table>
+<script src="app.js"></script>
+</body>
+</html>

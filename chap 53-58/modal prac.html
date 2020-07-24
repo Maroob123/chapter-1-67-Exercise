@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+* {
+box-sizing: border-box;
+}
+h1 {
+text-align: center;
+}
+.ImgThumbnail {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+height: 250px;
+width: 250px;
+}
+.ImgThumbnail:nth-of-type(1) {
+margin-left: 20%;
+}
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.9);
+}
+.modalImage {
+margin: auto;
+display: block;
+width: 50%;
+}
+#caption {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 150px;
+}
+.close {
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+.s{
+position: absolute;
+top: 15px;
+right: 90px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+.e{
+position: absolute;
+top: 13px;
+right: 135px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+.e:hover,
+.s:hover{
+color: rgb(0, 0, 255);
+cursor: pointer;
+}
+.close:hover,
+.close:focus {
+color: rgb(255, 0, 0);
+cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+.modalImage {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<h1>Image Modal Gallery Example</h1>
+<img
+class="ImgThumbnail" id="im"
+src="images/others/1.jpg"
+/>
+<img
+class="ImgThumbnail" id="im"
+src="images/others/6.jpg"
+/>
+<img
+class="ImgThumbnail" id="im"
+src="images/others/3.jpg"
+/>
+<img
+class="ImgThumbnail" id="im"
+src="images/others/4.png"
+/>
+<!-- The Modal -->
+<div class="modal">
+<span class="s" onclick="zoomin()">&#43;</span>
+<span class="e" onclick="zoomout()">&#45;</span>
+<span class="close">&times;</span>
+<img class="modalImage" id="img01" />
+</div>
+<script>
+var modalEle = document.querySelector(".modal");
+var modalImage = document.querySelector(".modalImage");
+Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+item.addEventListener("click", event => {
+modalEle.style.display = "block";
+modalImage.src = event.target.src;
+});
+});
+document.querySelector(".close").addEventListener("click", () => {
+modalEle.style.display = "none";
+});
+function zoomin() {
+  var myImg = document.getElementById("img01");
+  var currWidth = myImg.clientWidth;
+  if (currWidth == 2500) return false;
+  else {
+    myImg.style.width = (currWidth + 100) + "px";
+  }
+}
+
+function zoomout() {
+  var myImg = document.getElementById("img01");
+  var currWidth = myImg.clientWidth;
+  if (currWidth == 100) return false;
+  else {
+    myImg.style.width = (currWidth - 100) + "px";
+  }
+}
+</script>
+</body>
+</html>

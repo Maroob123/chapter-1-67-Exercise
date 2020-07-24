@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap 59-67 exercise</title>
+</head>
+<body>
+    <center><h1>chap 59-67 exercise</h1></center>
+    <h3>
+        1. Consider you have following code snippet:
+    </h3>
+    <div> <h1> DOM </h1> <div id="form-content" class="content"> <label for="first-name">First Name</label> <input type="text" id="first-name"/> <label for="last-name">Last Name</label> <input type="text" id="last-name"/> <label for="email">Email</label> <input type="text" id="email"/> </div><div id="main-content" class="content"> <p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div></div>
+   <br>
+    i. Get element of id “main-content" and assign them in a variable.<br>
+ii. Display all child elements of “main-content" element.<br><br>
+<button onclick="chill()">Show</button>
+<p id="show"></p>
+iii. Get all elements of class “render" and show their innerHTML
+in browser. <br><br>
+<button onclick="chill2()">Show</button>
+<p id="so2"></p>
+iv. Fill input value whose element id first-name using javascript. <br>
+<button onclick="fname()">Fill</button><br><br>
+v. Repeat part iv for id "last-name" and “email". <br>
+<button onclick="lnameEmail()">Fill</button>
+<h3>2. use HTML code of question 1 and show the result on browser.
+</h3>
+i. What is node type of element having id “form-content". <br>
+<button onclick="show()">Show</button><br>
+<p id="sho"></p>
+ii. Show node type of element having id “lastName" and its child node. <br>
+<button onclick="show1()">Show</button>
+<p id="sh1"></p>
+iii. Update child node of element having id “lastName". <br>
+<button onclick="show2()">Show</button><br>
+iv. Get First and last child of id “main-content". <br>
+<button onclick="show3()">Show</button><br>
+<p id="sh2"></p>
+v. Get next and previous siblings of id “lastName". <br>
+<button onclick="show4()">Show</button>
+<p id="sh3"></p>
+vi. Get parent node and node type of element having id “email" <br>
+<button onclick="show5()">Show</button>
+<p id="sh4"></p>
+</body>
+<script src="app.js"></script>
+</html>

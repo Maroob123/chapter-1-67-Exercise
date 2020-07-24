@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <script>
+        function alert7() {
+            alert("I am on the Head")
+        }
+    </script>
+    <title>Chap#1 Exercise</title>
+</head>
+<script>
+    function alert7_1() {
+        alert("I am before your page’s HTML");
+    }
+</script>
+
+<body onload="alert6();">
+    <script>
+        function alert7_2() {
+            alert("I am inside your page’s HTML")
+        }
+    </script>
+    <center>
+        <h1>Chapter # 1 Assignments</h1>
+    </center>
+    <h4>1. Write a script to greet your website visitor using JS alert box
+    </h4>
+    <button onclick="alert1();">Show</button>
+    <h4>2. Write a script to display following message on your web page:
+    </h4>
+    <button onclick="alert2();">Show</button>
+    <h4>3. Write a script to display following message on your web page: (Hint : Use line break)</h4>
+    <button onclick="alert3();">Show</button>
+    <h4>4. Write a script to display following messages in sequence:</h4>
+    <button onclick="alert4();">Show</button>
+    <h4>5. Generate the following message through browser’s developer console:</h4>
+    <button onclick="alert5();">Show</button>
+    <h4>6. Make use of alerts in your new/existing HTML & CSS project.
+    </h4>
+    <p>Refresh this page to check or click button above</p>
+    <button onclick="alert6();">Show</button>
+
+    <h4>7. Practice placement of script element in following sections of your project in exercise 6:
+        <br> a. Head
+        <br> b. Body (before your page’s HTML)
+        <br> c. Body (inside your page’s HTML)
+        <br> d. Body (after your page’s HTML)</h4>
+    <button onclick="alert7();">On the head</button>
+    <button onclick="alert7_1();">before your page’s HTML</button>
+    <button onclick="alert7_2();">inside your page’s HTML</button>
+    <button onclick="alert7_3();">after your page’s HTML</button>
+
+
+</body>
+<script>
+    function alert7_3() {
+        alert("I am after your page’s HTML")
+    }
+</script>
+
+</html>

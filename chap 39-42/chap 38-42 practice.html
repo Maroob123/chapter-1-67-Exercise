@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1></h1></center>
+    <h4>1. Write a custom function power ( a, b ), to calculate the value of
+        a raised to b.</h4>
+       Enter Number: <input id="a"><br><br>
+       Enter power:   &nbsp;&nbsp;&nbsp;<input id="b"><br><br>
+       <button onclick="now();">show</button>
+       <p id="c"></p>
+    <h4>2. Any year is entered through the keyboard. Write a function to
+        determine whether the year is a leap year or not.
+        Leap years ..., 2012, 2016, 2020, …
+        </h4>
+        Enter Year: <input id="leapyear">
+        <button onclick="leapYear();">Check</button>
+        <p id="c1"></p>
+    <h4>3. If the lengths of the sides of a triangle are denoted by a, b, and
+        c, then area of triangle is given by<br>
+        area = S(S − a)(S − b)(S − c)
+        <br>where, S = ( a + b + c ) / 2
+        <br>Calculate area of triangle using 2 functions</h4>
+        Enter Side A :<input id="side1"><br><br>
+        Enter Side B :<input id="side2"><br><br>
+        Enter Side C :<input id="side3"><br><br>
+        <button onclick="triArea()">Check</button><br><br>
+       Area=<input id="c2">
+    <h4>4. Write a function that receives marks received by a student in 3
+        subjects and returns the average and percentage of these
+        marks. there should be 3 functions one is the mainFunction
+        and other are for average and percentage. Call those functions
+        from mainFunction and display result in mainFunction.</h4>
+        Enter Marks for Subject 1:<input id="sub1"><br><br>
+        Enter Marks for Subject 2:<input id="sub2"><br><br>
+        Enter Marks for Subject 3:<input id="sub3"><br><br>
+        <button onclick="mainFunction();">Show</button><br><br>
+        Average =<input id="c3"><br><br>
+        percentage =<input id="c31"><br><br>
+
+
+    <h4>5. You have learned the function indexOf. Code your own custom
+        function that will perform the same functionality. You can code
+        for single character as of now.</h4>
+        Enter String :<input id="st"><br><br>
+        Enter character to search :<input id="ch"><br><br>
+        <button onclick="indexOF();">Show</button><br><br>
+        index where the character is :<input id="c4">
+
+    <h4>6. Write a function to delete all vowels from a sentence. Assume
+        that the sentence is not more than 25 characters long.</h4>
+        <input maxlength="25" id="vow"><br><br>
+        <button onclick="delVowel();">Show</button><br><br>
+        After delete vowels it becomes :<input id="c5">
+        
+    <h4>7. Write a function with switch statement to count the number of
+        occurrences of any two vowels in succession in a line of text.
+        For example, in the sentence
+    <br>
+    “Pleases read this application and give me gratuity”
+    Such occurrences are ea, ea, ui.
+    </h4>
+    <button onclick="findOccurrences();">Show</button>
+    <p id="c6"></p>
+    <h4>8. The distance between two cities (in km.) is input through the
+        keyboard. Write four functions to convert and print this
+        distance in meters, feet, inches and centimeters.</h4>
+
+        Enter distance between two cities (in Km):<input id="takeinp"><br><br>
+        <button onclick="showmeasurment();">Show</button><br><br>
+        <p id="c71"></p>
+        <p id="c72"></p>
+        <p id="c73"></p>
+        <p id="c74"></p>
+    <h4>9. Write a program to calculate overtime pay of employees.
+        Overtime is paid at the rate of Rs. 12.00 per hour for every hour
+        worked above 40 hours. Assume that employees do not work
+        for fractional part of an hour.</h4>
+        Enter Working hours of Employee:<input id="whour">
+        <button onclick="overtime();">Check</button>
+        <p id="overtime"></p>
+
+    <h4>10. A cashier has currency notes of denominations 10, 50 and
+        100. If the amount to be withdrawn is input through the
+        keyboard in hundreds, find the total number of currency notes
+        of each denomination the cashier will have to give to the
+        withdrawer.</h4>
+        Enter Amount :<input id="amount">
+        <button onclick="amount();">Show</button>
+        <p id="notes"></p>
+
+<script src="app.js"></script>        
+</body>
+</html>

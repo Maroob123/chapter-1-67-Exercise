@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Chap 43-48 Exercise</title>
+</head>
+<body>
+    <center><h1>Chap 43-48 Exercise</h1></center>
+    <h4>1. Show an alert box on click on a link.</h4>
+    <button onclick="alert('Asslam-o-Alikum ,Welcome to my Practice session')">Show</button>
+    <h4>2. Display some Mobile images in browser. On click on an
+        image Show the message in alert to user.</h4>
+        <br><strong><h2 style="color: lightblue;">Mobile Phone Lookup</h2></strong>
+        <img src="images/phone04.png" alt="phone04" class="im" onclick="alert('Thanks for Purchasing a phone from us')">
+        <img src="images/phone02.png" alt="phone02" class="im" onclick="alert('Thanks for Purchasing a phone from us')">
+        <img src="images/phone01.png" alt="phone01" class="im" onclick="alert('Thanks for Purchasing a phone from us')">
+        <img src="images/phone03.jpg" alt="phone03" class="im" onclick="alert('Thanks for Purchasing a phone from us')">
+    <h4>3. Display 10 student records in table and each row should contain a delete
+        button. If you click on a button to delete a record, entire row should be
+        deleted. </h4>
+        <table id="mytable">
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>James</td>
+                <td>8</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Peter</td>
+                <td>8</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>Steve</td>
+                <td>9</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>Robert</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+            <tr>
+                <td>08</td>
+                <td>Esra</td>
+                <td>7</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+            <tr>
+                <td>09</td>
+                <td>Smith</td>
+                <td>8</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Roman</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this);">Delete</button></td>
+            </tr>
+        </table>
+    <h4>4. Display an image in browser. Change the picture on mouseover and set the
+        first picture on mouseout</h4>
+        <img src="images/surface-pro-6-hero-aqua.jpg" alt="" style="width:500px; height: 300px;" onmouseover=mouseOverImage(); id="change" onmouseout="mouseOutImage();">
+        <h4>5. Show a counter in browser. Counter should increase on click on increase
+            button and decrease on click on decrease button. And show updated counter
+            value in browser</h4>
+          <div class="inc"></div>  <button class="w3-button w3-xlarge w3-circle w3-black" onclick="increment();">+</button><button class="w3-button w3-gray w3-round-xlarge" style="width: 10%;" id="output">0</button><button class="w3-button w3-xlarge w3-circle w3-black" style="width: 4%;" onclick="decrement();">- </button></div>
+    <h4></h4>
+<script src="app.js"></script>
+</body>
+</html>

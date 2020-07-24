@@ -1,0 +1,10 @@
+.im{
+    height: 250px;
+    width: 250px;
+    justify-content: space-between;
+    background-color: #fff;
+}
+#inc{
+    justify-content: space-between;
+    display: inline-block;
+}
